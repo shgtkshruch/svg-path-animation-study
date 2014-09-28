@@ -1,1 +1,25 @@
+svg {
+  display: block;
+}
 
+.form {
+  &__title {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  &__section {
+    display: table-row;
+  }
+  &__heading {
+    display: table-cell;
+    font-weight: normal;
+    &:after {
+      content: ':';
+      padding-left: .3em;
+    }
+  }
+  [class$="input"] {
+    width: 20em;
+  }
+}
